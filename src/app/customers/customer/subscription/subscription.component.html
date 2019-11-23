@@ -1,0 +1,24 @@
+<form #subscriptionForm="ngForm" class="row">
+    <div class="input-group col-4">
+        <label>
+            Subscriptioin name:
+            <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="subsFormValue.name"
+                name="name"
+            />
+        </label>
+    </div>
+    <div class="input-group col-4">
+        <label>
+            Subscripotion type:
+            <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="subsFormValue.type"
+                name="contractStartDate"
+            />
+        </label>
+    </div>
+</form>

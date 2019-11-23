@@ -1,0 +1,35 @@
+<form #offerForm="ngForm" class="row">
+    <div class="input-group col-4">
+        <label>
+            Offer name:
+            <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="offerFormValue.name"
+                name="name"
+            />
+        </label>
+    </div>
+    <div class="input-group col-4">
+        <label>
+            Contract start date:
+            <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="offerFormValue.contractStartDate"
+                name="contractStartDate"
+            />
+        </label>
+    </div>
+    <div class="input-group col-4">
+        <label>
+            Contract end date:
+            <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="offerFormValue.contractEndDate"
+                name="contractEndDate"
+            />
+        </label>
+    </div>
+</form>

@@ -1,0 +1,32 @@
+<form #customerForm="ngForm">
+    <div class="row">
+        <div class="input-group col-6">
+            <label>
+                First name:
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Username"
+                    [(ngModel)]="customerData.firstName"
+                    name="firstName"
+                />
+            </label>
+        </div>
+
+        <div class="input-group col-6">
+            <label>
+                Last name:
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Username"
+                    [(ngModel)]="customerData.lastName"
+                    name="lastName"
+                />
+            </label>
+        </div>
+    </div>
+
+    <app-offer [offerId]="customerData.offerId"></app-offer>
+    <app-subscription [subsId]="customerData.subscriptionId"></app-subscription>
+</form>
